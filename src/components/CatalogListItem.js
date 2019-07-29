@@ -28,8 +28,8 @@ export class CatalogListItem extends React.Component {
                         Description
                     </Button>
                     <Card.Text as='div' className={this.state.visible ? "itemDescription" : "hideDescription itemDescription"}>
-                        {this.props.item.description} 
-                        <div><Badge variant={this.props.item.stock==='in stock'?'success':'danger'}>{this.props.item.stock}</Badge></div>
+                        {this.props.item.description}
+                        <div><Badge variant={this.props.item.stock === 'in stock' ? 'success' : 'danger'}>{this.props.item.stock}</Badge></div>
                     </Card.Text>
                 </Card.Body>
             </Card>
